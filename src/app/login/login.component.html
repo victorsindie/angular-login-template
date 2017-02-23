@@ -1,19 +1,27 @@
 <div fxLayout="row"
-     fxLayoutAlign="center center" style="height: 100%;" fxFill>
-  <md-card fxFlex="20%">
-    <md-card-title>
+     fxLayoutAlign.xs = "column"
+     fxLayoutAlign.gt-xs = "column"
+     fxLayoutAlign.sm = "row"
+     fxLayoutAlign.gt-sm = "row"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start center"
+     fxLayoutAlign.gt-xs="start center"
+     fxLayoutAlign.sm="center center"
+     fxLayoutAlign.gt-sm="center center" fxFill>
+  <md-card fxFlex="20%" fxFlex.xs="95%" fxFlex.gt-xs="95%" fxFlex.sm="80%" fxFlex.gt-sm="70%" fxFlex.md="50%" fxFlex.gt-md="40%" fxFlex.lg="35%" fxFlex.gt-lg="30%" fxFlex.xl="25%">
+    <md-card-title style="text-align: center;">
       Login
     </md-card-title>
     <md-card-content fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="15px">
-        <button md-raised-button fxFlexFill><md-icon>check</md-icon>Facebook</button>
-        <button md-raised-button fxFlexFill><md-icon>check</md-icon>Google</button>
-        <button md-raised-button fxFlexFill><md-icon>email</md-icon>Email</button>
+      <button (click)="loginFb()" id="fb">Login With Facebook</button><br>
+      <button (click)="loginGoogle()" id="google">Login With Google</button>
+      <button routerLink="/login-email" id="email">Email</button>
     </md-card-content>
     <md-card-actions>
       <br/>
     </md-card-actions>
     <md-card-footer fxLayout="column" fxLayoutAlign="center center" >
-      <span fxFlex style="margin-bottom: 20px;">Don't have an account? Sign up</span>
+      <span fxFlex style="margin-bottom: 20px;">Don't have an account? <a routerLink="/signup"><b>Sign up</b></a></span>
     </md-card-footer>
   </md-card>
 </div>

@@ -1,3 +1,33 @@
-<p>
-  signup works!
-</p>
+<div fxLayout="row"
+     fxLayoutAlign.xs = "column"
+     fxLayoutAlign.gt-xs = "column"
+     fxLayoutAlign.sm = "row"
+     fxLayoutAlign.gt-sm = "row"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start center"
+     fxLayoutAlign.gt-xs="start center"
+     fxLayoutAlign.sm="center center"
+     fxLayoutAlign.gt-sm="center center" fxFill>
+  <md-card fxFlex="20%" fxFlex.xs="95%" fxFlex.gt-xs="95%" fxFlex.sm="80%" fxFlex.gt-sm="70%" fxFlex.md="50%" fxFlex.gt-md="40%" fxFlex.lg="35%" fxFlex.gt-lg="30%" fxFlex.xl="25%">
+    <md-card-subtitle>
+
+      <button md-mini-fab color="primary" routerLink="/login"><md-icon fontSet="fa" fontIcon="fa-arrow-left"></md-icon></button>
+    </md-card-subtitle>
+    <md-card-title style="text-align: center;">
+      Join Now
+    </md-card-title>
+    <md-card-content>
+      <form fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px">
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="Email" value="" >
+        </md-input-container>
+        <md-input-container>
+          <input mdInput placeholder="Password" value="">
+        </md-input-container>
+        <button md-raised-button color="accent" fxFlex="40%">Create Account</button>
+      </form>
+    </md-card-content>
+    <md-card-actions>
+    </md-card-actions>
+  </md-card>
+</div>

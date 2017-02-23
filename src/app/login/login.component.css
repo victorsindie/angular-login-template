@@ -1,3 +1,36 @@
-app-login {
-  height: 100%;
+button {
+  padding:1em;
+  width:100%;
+  cursor:pointer;
+  margin-bottom:15px;
+  font-size:1.3em;
+}
+
+.basic-btn {
+  background: #3B8598;
+  color:white;
+}
+
+#lock {
+  width:40%;
+  margin: 1.5em auto 4em auto;
+  display:block;
+}
+
+#fb {
+  background:#3B5998 url('assets/icons/facebook.svg') no-repeat 14px 6px;
+  background-size: 37px;
+  color:#fff;
+}
+
+#google {
+  border: 1px solid #95989A;
+  background: #fff  url('assets/icons/google.svg') no-repeat 25px;
+  background-size: 25px;
+}
+
+#email {
+  background: #ebebeb url('assets/icons/email.svg') no-repeat 25px;
+  background-size: 25px;
+  border: 0;
 }
