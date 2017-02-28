@@ -1,19 +1,28 @@
+<!-- ADD TOOLBAR TO SUB-ROOTS OF LOGGED IN USERS
+
 <md-toolbar color="primary">
   <button md-button routerLink="/">
     <md-icon>home</md-icon>
     {{title}}</button>
-  <span class="fill-remaining-space"></span>
-  <div fxLayout="row" fxShow="false" fxShow.gt-sm fxShow.sm>
+  <span fxLayout="row" fxShow="false" fxShow.gt-sm fxShow.sm fxLayoutAlign="end start" fxFlex="100%">
+      <span class="fill-remaining-space" fxFlex="80%"></span>
+      <button md-menu-item routerLink="/login" fxFlex="80px;" style="color: white;">Login</button>
+      <button md-menu-item routerLink="/login-email" fxFlex="80px;" style="color: white;">Email</button>
+    </span>
+  <span fxLayout="row" fxLayoutAlign="end start" fxHide.gt-sm fxHide.sm fxFlex="100%">
+      <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm fxHide.sm>
+        <md-icon>menu</md-icon>
+      </button>
+    </span>
+  <md-menu x-position="before" #menu="mdMenu">
     <button md-menu-item routerLink="/login">Login</button>
-    <button md-menu-item routerLink="/login-email">Email</button>
-  </div>
-  <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
-    <md-icon>menu</md-icon>
-  </button>
-</md-toolbar>
-<md-menu x-position="before" #menu="mdMenu">
-  <button md-menu-item routerLink="/login">Login</button>
-  <button md-menu-item routerLink="/login-email">Login Email</button>
-  &lt;!&ndash;<button md-menu-item>Help</button>&ndash;&gt;
-</md-menu>
+    <button md-menu-item routerLink="/login-email">Login Email</button>
+    <button md-menu-item>Help</button>
+  </md-menu>
+</md-toolbar>-->
 <router-outlet></router-outlet>
+
+
+
+
+
